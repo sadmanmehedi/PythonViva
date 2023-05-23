@@ -49,4 +49,32 @@ print(y)
 print(z)
 
 
+#printing in the same line
+first="Python"
+second="is"
+third="Awesome"
+print(first,second,third)
 
+
+#combining number and a string
+nm=str(17)
+st="Anam"
+print(st+nm)
+
+
+#GlobalVariable
+globalvariable="Twenty Two"
+
+def myfunc():
+ print("Line number "+globalvariable)
+
+myfunc()
+
+#global in a function
+
+def anotherf():
+    global xx
+    xx="sad"
+    print("SAD"+xx)
+
+anotherf()
