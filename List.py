@@ -58,3 +58,29 @@ print(modification)
 #Insert Value
 modification.insert(0,"Liverpool")
 print(modification)
+
+#Appending List items
+modification.append("NewCastle United")
+print(modification)
+
+#Extend
+Laliga=["RealMadrid","Barcelona"]
+modification.extend(Laliga)
+print(modification)
+
+#Removing Items
+modification.remove("Manchester United")
+print(modification)
+
+modification.pop(0)
+print(modification)
+
+del modification[1]
+print(modification)
+
+
+#Sorting Modification
+modification.sort()
+print(modification)
+modification.sort(reverse=True)
+print(modification)
