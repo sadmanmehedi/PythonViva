@@ -1,3 +1,11 @@
 import MainModule
+import platform
+import platform
 
-print(MainModule.sivan(" ANM"))
+x = dir(platform)
+print(x)
+
+x = platform.system()
+print(x)
+
+#print(MainModule.sivan(" ANM"))

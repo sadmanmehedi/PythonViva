@@ -1,2 +1,4 @@
 def sivan(x):
-    print("I love you"+x)
+    print("I care for you"+x)
+
+
