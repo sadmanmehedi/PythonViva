@@ -42,5 +42,9 @@ class Test:
 
 
 x=Test("SADMAN",43)
+x.id=17
 print(x.id)
-print(x.myF())
+del x.id
+#print(x.id)
+del x
+#print(x.id)
