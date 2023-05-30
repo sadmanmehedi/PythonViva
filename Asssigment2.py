@@ -2,6 +2,13 @@ import sys
 
 l = []
 
+def terminationcondition():
+    print("Back to Main Menu?\n1.Yes\n2.No Terminate The Program")
+    ask = int(input())
+    if ask == 2:
+        print("Thank you!")
+        sys.exit()
+
 
 def choices(container):
     print("Which "+container+" operation you want to perform")
@@ -21,11 +28,7 @@ def pushs(container):
     print("Got the value")
     print("Updated" + container + " is: ")
     print(l)
-    print("Back to Main Menu?\n1.Yes\n2.No Terminate The Program")
-    ask = int(input())
-    if ask == 2:
-        print("Thank you!")
-        sys.exit()
+    terminationcondition()
 
 
 def inserts(container):
@@ -38,61 +41,41 @@ def inserts(container):
     print("Operation Done")
     print("Updated "+container+" is:")
     print(l)
-    print("Back to Main Menu?\n1.Yes\n2.No Terminate The Program")
-    ask = int(input())
-    if ask == 2:
-        print("Thank you!")
-        sys.exit()
+    terminationcondition()
 
 
-def pops(container,position):
+def pops(container,position,p):
     if len(l) == 0:
         print(container+" is already Empty")
 
     else:
         print("Value is popped from the "+position)
         print("Updated "+container+" is:")
-        l.pop(0)
+        l.pop(p)
         print(l)
-    print("Back to Main Menu?\n1.Yes\n2.No Terminate The Program")
-    ask = int(input())
-    if ask == 2:
-        print("Thank you!")
-        sys.exit()
+    terminationcondition()
 
 
 def sizes(container):
     print("The size of the "+container+" is " + str(len(l)))
-    print("Back to Main Menu?\n1.Yes\n2.No Terminate The Program")
-    ask = int(input())
-    if ask == 2:
-        print("Thank you!")
-        sys.exit()
+    terminationcondition()
 
 
 def prints(container):
     print("The "+container+" is")
     print(l)
-    print("Back to Main Menu?\n1.Yes\n2.No Terminate The Program")
-    ask = int(input())
-    if ask == 2:
-        print("Thank you!")
-        sys.exit()
+    terminationcondition()
 
 
 def clears(container):
     l.clear()
     print(container+" is empty now!")
     print("Back to Main Menu?\n1.Yes\n2.No Terminate The Program")
-    ask = int(input())
-    if ask == 2:
-        print("Thank you!")
-        sys.exit()
+    terminationcondition()
 
 
 print("Hello There! What do you want to Implement?")
 print("1.Queue 2.Stack")
-print("\n")
 choice = int(input())
 
 
@@ -105,7 +88,7 @@ while True:
             pushs("QUEUE")
 
         elif subchoice == 2:
-            pops("QUEUE","FIRST")
+            pops("QUEUE","FIRST",0)
 
         elif subchoice == 3:
             inserts("QUEUE")
@@ -129,7 +112,7 @@ while True:
         if subchoice == 1:
             pushs("STACK")
         elif subchoice == 2:
-            pops("STACK","LAST")
+            pops("STACK","LAST",len(l)-1)
         elif subchoice == 3:
             inserts("STACK")
         elif subchoice == 4:
