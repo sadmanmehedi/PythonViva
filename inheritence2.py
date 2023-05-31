@@ -5,6 +5,11 @@ class PL:
         self.title=title
 
 
-Chelsea=PL("Chelsea","London","4")
-Manchester=PL("ManchesterUnited","Manchester","14")
-Liverpool=PL("Liverpool","Mersyside","1")
+def Chelsea(PL):
+    pass
+
+def Arsenal(PL):
+    pass
+
+def Liverpool(PL):
+    pass
