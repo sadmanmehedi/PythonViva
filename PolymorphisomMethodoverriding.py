@@ -9,7 +9,7 @@ class Shape:
 class Circle(Shape):
     def __init__(self,radius):
         self.radius=radius
-        super().__init__(radius,radius)
+        #super().__init__(radius,radius)
 
     def area(self):
         return 3.14*super().area()

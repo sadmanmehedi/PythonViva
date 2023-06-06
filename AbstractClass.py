@@ -3,6 +3,8 @@ from abc import ABC, abstractmethod
 class Car(ABC):
     def mileage(self):
         pass
+    def cost(self):
+        return 30
 
 
 class Tesla(Car):
@@ -36,3 +38,4 @@ s = Suzuki()
 s.mileage()
 d = Duster()
 d.mileage()
+print(d.cost())

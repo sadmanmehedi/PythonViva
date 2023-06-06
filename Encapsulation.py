@@ -4,13 +4,14 @@ class Student:
         self.name=name
         self.__id=id
 
+    def __id2(self):
+        print("Private Method is run")
     def details(self):
         print(f"His name is {self.name} and id is {self.__id}")
-        self.__id()
+        self.__id2()
 
 
-    def __id(self):
-        print("Private Method is run")
+
 
 
 Sivan=Student("Sivan","43")
