@@ -14,10 +14,7 @@ class Circle(Shape):
     def area(self):
         return 3.14*super().area()
 
-
 rec=Shape(3,5)
 print(rec.area())
-
 y=Circle(5)
-
 print(y.area())
